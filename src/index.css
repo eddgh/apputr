@@ -1,0 +1,149 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 2rem; */
+  text-align: center;
+  background-color: rgb(45, 51, 51);
+}
+
+header {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 90%; */
+  /* background-color: #ffffff; */
+  text-align: center;
+  font-size: 0.6rem;
+  margin-top: 3rem;
+  /* padding: 0.5rem 5rem; */
+}
+
+header img {
+  width: 4rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.container {
+  margin-top: 2rem;;
+  /* background-color: #747bff; */
+  padding: 3rem;
+  min-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} 
+
+
+.grid {
+  justify-content: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 360px);
+}
+
+.grid:nth-child(2){
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+.grid>*{
+  background-color: #ecede8;
+  height: 300px;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+code{
+  color: rgb(197, 85, 5);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    margin-bottom: 1rem;
+  }
+
+  /* .grid {
+    grid-template-columns: repeat(auto-fill, 200px);
+  } */
+  main {
+    flex-wrap: wrap;
+  }
+}
